@@ -88,10 +88,10 @@ export default function AboutPage() {
                 <h3 className="font-bold text-gray-900 uppercase text-xs tracking-widest">Contact</h3>
                 <ul className="space-y-3 text-sm text-gray-500">
                   <li className="flex items-center gap-3">
-                    <FaEnvelope className="text-gray-400 text-lg" /> rigel.recuerdo@email.com
+                    <FaEnvelope className="text-gray-400 text-lg" /> recuerdojohnrigel@gmail.com
                   </li>
                   <li className="flex items-center gap-3">
-                    <FaPhone className="text-gray-400 text-lg" /> +63 917 123 4567
+                    <FaPhone className="text-gray-400 text-lg" /> +63 993 412 7869
                   </li>
                   <li className="flex items-center gap-3">
                     <FaMapMarkerAlt className="text-gray-400 text-lg" /> Cebu, Philippines
