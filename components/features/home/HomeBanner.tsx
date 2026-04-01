@@ -73,7 +73,7 @@ export function HomeBanner() {
           <Image
             alt="John Rigel"
             fill
-            src="@/public/profile-pic.jpg" // Ensure this path is correct
+            src="/profile-pic.jpg" // Ensure this path is correct
             priority
             className="rounded-3xl object-cover shadow-sm"
           />
