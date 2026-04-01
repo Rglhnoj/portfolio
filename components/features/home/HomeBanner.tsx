@@ -2,61 +2,64 @@ import Link from "next/link";
 import Image from "next/image";
 import { Section } from "@/components/common/Section";
 import { Button } from "@/components/ui/button";
-
-import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
+import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 
 export function HomeBanner() {
   const socials = [
-    {
-      name: "Github",
-      icon: <Github className="h-6 w-6" />,
-      link: "https://github.com/"
-    },
-    {
-      name: "Linkedin",
-      icon: <Linkedin className="h-6 w-6" />,
-      link: "https://linkedin.com/"
-    },
-    {
-      name: "Mail",
-      icon: <Mail className="h-6 w-6" />,
-      link: "mailto:email@portfolio.com"
-    }
-  ]
+    { name: "Github", icon: <FaGithub className="h-5 w-5" />, link: "https://github.com/rglhnoj" },
+    { name: "Linkedin", icon: <FaLinkedin className="h-5 w-5" />, link: "https://www.linkedin.com/in/recuerdo-john-rigel-82155037b/" },
+    { name: "Mail", icon: <Mail className="h-5 w-5" />, link: "mailto:recuerdojohnrigel@Gmail.com" },
+    { name: "Facebook", icon: <FaFacebook className="h-5 w-5" />, link: "https://www.facebook.com/johnrigelrecuerdo" }
+  ];
 
   return (
-    <Section className="grid lg:grid-cols-2 gap-8 items-center min-h-[calc(100vh-4rem)]">
+    <Section className="grid lg:grid-cols-2 gap-12 items-center py-20">
       {/* Left Content */}
-      <div className="flex flex-col items-center lg:items-start justify-center space-y-8">
+      <div className="flex flex-col items-start space-y-6">
+        
+        {/* Availability Badge */}
+        <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-100 text-emerald-600 text-sm font-medium">
+          <span className="relative flex h-2 w-2">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+          </span>
+          Message me
+        </div>
+
         <div className="space-y-4">
-          <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70">
-            Building Exceptional <br className="hidden md:inline" />
-            Digital Experiences
+          <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-slate-900">
+            Hey, I'm John 👋
           </h1>
 
-          <p className="max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">I'm a Full Stack Developer specializing in building (and occasionally designing) simple, beautiful, and intuitive interfaces.</p>
+          <p className="max-w-[500px] text-slate-600 text-lg leading-relaxed">
+            A passionate <span className="font-semibold text-slate-900">Full Stack Developer</span> dedicated to building websites, web applications, and custom software that are not only highly functional but also visually captivating.
+          </p>
         </div>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 w-full">
-          <Link href="/projects">
-            <Button size="lg" className="group w-full lg:w-auto">
-              Check out my work
-              <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+        <div className="flex flex-wrap gap-4">
+          <Link href="/contact">
+            <Button size="lg" className="bg-slate-900 text-white hover:bg-slate-800 px-8 rounded-md">
+              Free Consultation
             </Button>
           </Link>
 
-          <Link href="/contact">
-            <Button variant="outline" size="lg" className="w-full lg:w-auto">
-              Contact Me
+          <Link href="/projects">
+            <Button variant="outline" size="lg" className="border-slate-200 px-8 rounded-md">
+              Explore Projects
             </Button>
           </Link>
         </div>
 
-        {/* Socials */}
-        <div className="flex items-center gap-4 text-muted-foreground">
+        {/* Social Icons - Grayscale style like the image */}
+        <div className="flex items-center gap-5 pt-2 text-slate-400">
           {socials.map((social) => (
-            <Link key={social.name} href={social.link} className="hover:text-foreground transition-colors">
+            <Link 
+              key={social.name} 
+              href={social.link} 
+              className="hover:text-slate-900 transition-colors"
+            >
               {social.icon}
               <span className="sr-only">{social.name}</span>
             </Link>
@@ -64,10 +67,18 @@ export function HomeBanner() {
         </div>
       </div>
 
-      {/* Right Content */}
-      <div className="flex justify-center items-center">
-        <Image alt="Hero Banner" height={300} width={300} src="/media/hero-bannerimg.avif" priority className="rounded-2xl shadow-2xl object-cover w-full max-w-[500px] aspect-square transform rotate-3 hover:rotate-0 transition-transform duration-500" />
+      {/* Right Content - Image with soft rounding */}
+      <div className="flex justify-center lg:justify-end">
+        <div className="relative w-full max-w-[450px] aspect-square">
+          <Image
+            alt="John Rigel"
+            fill
+            src="@/public/profile-pic.jpg" // Ensure this path is correct
+            priority
+            className="rounded-3xl object-cover shadow-sm"
+          />
+        </div>
       </div>
     </Section>
-  )
+  );
 }
