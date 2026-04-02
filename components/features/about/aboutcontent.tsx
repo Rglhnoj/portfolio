@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { FaLinkedin, FaGithub, FaInstagramSquare, FaFacebook, FaEnvelope, FaPhone, FaMapMarkerAlt, FaDownload, FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaInstagramSquare, FaFacebook, FaEnvelope, FaPhone, FaMapMarkerAlt,} from "react-icons/fa";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { FileDown } from "lucide-react";
@@ -54,15 +54,15 @@ export default function AboutContent() {
             </h2>
             <div className="space-y-4 text-gray-600 leading-relaxed text-sm md:text-base">
               <p>
-                Hi there, I'm <span className="font-bold text-gray-900">John Rigel</span>. I'm a BSIT student majoring in Software Development.
-                I'm passionate about building high-performance applications that seamlessly bridge web and mobile experiences.
+                Hi there, I&apos;m <span className="font-bold text-gray-900">John Rigel</span>. I&apos;m a BSIT student majoring in Software Development.
+                I&apos;m passionate about building high-performance applications that seamlessly bridge web and mobile experiences.
               </p>
               <p>
                 I specialize in designing and building scalable, user-centric solutions, from dynamic websites to complex custom applications.
                 My focus is on performance, accessibility, and delivering exceptional user experiences through modern technologies.
               </p>
               <p>
-                I'm currently focused on integrating AI into applications to enhance automation, efficiency, and user engagement.
+                I&apos;m currently focused on integrating AI into applications to enhance automation, efficiency, and user engagement.
               </p>
             </div>
 

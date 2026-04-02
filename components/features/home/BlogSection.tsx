@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Section } from "@/components/common/Section";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Calendar, Tag } from "lucide-react";
+import { ArrowRight, Calendar } from "lucide-react";
 import { SectionHeading } from "@/components/common/SectionHeading";
 import { BLOG_POSTS } from "@/constants/blog"; // Adjust path to your TS file
 

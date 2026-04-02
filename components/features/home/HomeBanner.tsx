@@ -29,7 +29,7 @@ return (
 
         <div className="space-y-6">
           <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-[1.1]">
-            Hey, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500">John</span> 👋
+            Hey, I&apos;m <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500">John</span> 👋
           </h1>
 
           {/* Changed text-slate-600 to text-slate-400 for better dark mode visibility */}

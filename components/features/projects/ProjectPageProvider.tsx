@@ -4,7 +4,7 @@ import { useState } from "react";
 import { PROJECTS } from "@/constants/project";
 import { ProjectCard } from "@/components/common/ProjectCard";
 import { Section } from "@/components/common/Section";
-import { Search, Globe } from "lucide-react";
+import { Search } from "lucide-react";
 
 export default function ProjectsPageProvider() {
   const [searchQuery, setSearchQuery] = useState("");
