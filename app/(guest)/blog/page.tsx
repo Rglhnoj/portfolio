@@ -1,8 +1,5 @@
-export default function BlogPage(){
-    return (
-        <main> 
-            Blog Page 
-        
-        </main>
-    )
+import { BlogLandingContent } from "@/components/features/blog/BlogLandingContent";
+
+export default function BlogLandingPage() {
+  return <BlogLandingContent />;
 }
