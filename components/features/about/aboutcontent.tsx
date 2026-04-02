@@ -8,11 +8,11 @@ export default function AboutContent() {
   const resumeLink = "https://docs.google.com/document/d/1wI0j_mBk3JdxTZr9KtsTjUl-mKLi4WPunXjQH9aNQp0/export?format=pdf";
   return (
     
-    <div className="w-full p-4 md:p-10 font-sans">
+    <div className="w-full dark:bg-slate-950 p-4 md:p-10 font-sans">
       <div className="max-w-6xl mx-auto space-y-6">
 
         {/* 1. HEADER / COVER SECTION */}
-        <div className="bg-white rounded-3xl shadow-sm overflow-hidden border border-gray-100">
+        <div className="bg-white  rounded-3xl shadow-sm overflow-hidden border border-gray-100">
           {/* Cover Image Container */}
           <div className="relative w-full h-48 md:h-64">
             <Image
