@@ -9,7 +9,7 @@ import { SectionHeading } from "@/components/common/SectionHeading";
 
 export function Projects() {
   return (
-    <Section className="space-y-12">
+    <Section className="space-y-12 bg-white dark:bg-slate-950 space-y-6 px-10 md:px-20">
       {/* Section Heading */}
       <SectionHeading title="Featured Projects" description="Here are some of the projects I've worked on recently. Each one presented unique challenges and learning opportunities." />
 

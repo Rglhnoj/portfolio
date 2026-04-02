@@ -14,10 +14,11 @@ export function HomeBanner() {
   ];
 
   return (
-    <Section className="grid lg:grid-cols-2 gap-12 items-center py-20">
+    <Section className="grid lg:grid-cols-2 gap-8 items-center py-20 bg-white  dark:bg-slate-950 dark:text-white transition-colors duration-300">
+      
       {/* Left Content */}
-      <div className="flex flex-col items-start space-y-6">
-        
+      <div className="flex flex-col items-start space-y-6 px-10 md:px-20">
+
         {/* Availability Badge */}
         <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-100 text-emerald-600 text-sm font-medium">
           <span className="relative flex h-2 w-2">
@@ -28,12 +29,12 @@ export function HomeBanner() {
         </div>
 
         <div className="space-y-4">
-          <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-slate-900">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-slate-900 dark:text-white">
             Hey, I'm John 👋
           </h1>
 
-          <p className="max-w-[500px] text-slate-600 text-lg leading-relaxed">
-            A passionate <span className="font-semibold text-slate-900">Full Stack Developer</span> dedicated to building websites, web applications, and custom software that are not only highly functional but also visually captivating.
+          <p className="max-w-[500px] text-slate-600  text-lg dark:text-white-800 leading-relaxed">
+            A passionate <span className="font-semibold text-slate-900 dark:text-white">Full Stack Developer</span> dedicated to building websites, web applications, and custom software that are not only highly functional but also visually captivating.
           </p>
         </div>
 
@@ -55,9 +56,9 @@ export function HomeBanner() {
         {/* Social Icons - Grayscale style like the image */}
         <div className="flex items-center gap-5 pt-2 text-slate-400">
           {socials.map((social) => (
-            <Link 
-              key={social.name} 
-              href={social.link} 
+            <Link
+              key={social.name}
+              href={social.link}
               className="hover:text-slate-900 transition-colors"
             >
               {social.icon}
@@ -68,7 +69,7 @@ export function HomeBanner() {
       </div>
 
       {/* Right Content - Image with soft rounding */}
-      <div className="flex justify-center lg:justify-end">
+      <div className="flex justify-center items-center">
         <div className="relative w-full max-w-[450px] aspect-square">
           <Image
             alt="John Rigel"

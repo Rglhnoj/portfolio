@@ -5,7 +5,7 @@ import { SectionHeading } from "@/components/common/SectionHeading";
 
 export function Skills() {
   return (
-    <Section className="bg-muted rounded-lg">
+    <Section className="bg-muted rounded-lg dark:bg-slate-950 transition-colors duration-300 space-y-6 px-10 md:px-20">
       <div className="space-y-12 text-center md:text-left px-6 lg:px-20">
         {/* Heading */}
         <SectionHeading title="Skills & Technologies" description="A list of the technologies I work with on a daily basis. I'm always learning new things to stay up-to-date." />

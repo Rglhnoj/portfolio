@@ -4,7 +4,8 @@ import { ThemeToggle } from "@/components/common/ThemeToggle";
 
 export function Header() {
   return (
-    <header className="border-b border-gray-800 py-5">
+    
+    <header className="border-b border-gray-800 py-5bg-white dark:bg-slate-950 transition-colors duration-300">
       <div className="container mx-auto px-6">
         <div className="flex justify-between items-center">
           {/* Logo */}
@@ -23,7 +24,9 @@ export function Header() {
           {/* Buttons */}
           <div className="flex items-center gap-4">
             <ThemeToggle />
-            <Button>Contact</Button>
+            <Button asChild>
+              <Link href="/contact">Contact</Link>
+            </Button>
           </div>
         </div>
       </div>
