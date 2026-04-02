@@ -62,7 +62,7 @@
                                 </div>
                                 <div>
                                     <p className="font-medium">Email</p>
-                                    <p className="text-muted-foreground">hello@example.com</p>
+                                    <p className="text-muted-foreground">hello@gmail.com</p>
                                 </div>
                             </div>
                         </div>

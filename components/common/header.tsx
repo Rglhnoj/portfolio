@@ -5,12 +5,12 @@ import { ThemeToggle } from "@/components/common/ThemeToggle";
 export function Header() {
   return (
     
-    <header className="border-b border-gray-800 py-5bg-white dark:bg-slate-950 transition-colors duration-300">
-      <div className="container mx-auto px-6">
+   <header className="sticky top-0 z-50 w-full border-b border-gray-800 bg-white/80 dark:bg-slate-950/80 backdrop-blur-md transition-colors duration-300">
+      <div className="container mx-auto px-6 py-5">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div>
-            <h1 className="font-bold">Portfolio</h1>
+            <h1 className="font-bold text-2xl">Portfolio</h1>
           </div>
           {/* Navigations */}
           <nav>

@@ -12,54 +12,54 @@ export function HomeBanner() {
     { name: "Mail", icon: <Mail className="h-5 w-5" />, link: "mailto:recuerdojohnrigel@Gmail.com" },
     { name: "Facebook", icon: <FaFacebook className="h-5 w-5" />, link: "https://www.facebook.com/johnrigelrecuerdo" }
   ];
-
-  return (
-    <Section className="grid lg:grid-cols-2 gap-8 items-center py-20 bg-white  dark:bg-slate-950 dark:text-white transition-colors duration-300">
+return (
+    <Section className="grid lg:grid-cols-2 gap-12 items-center py-24 bg-white dark:bg-slate-950 dark:text-white transition-colors duration-300">
       
       {/* Left Content */}
-      <div className="flex flex-col items-start space-y-6 px-10 md:px-20">
+      <div className="flex flex-col items-start space-y-8 px-6 md:px-20">
 
-        {/* Availability Badge */}
-        <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-100 text-emerald-600 text-sm font-medium">
+        {/* Availability Badge - Refined colors for Dark Mode */}
+        <div className="flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold uppercase tracking-wider">
           <span className="relative flex h-2 w-2">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
           </span>
-          Message me
+          Available for work
         </div>
 
-        <div className="space-y-4">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-slate-900 dark:text-white">
-            Hey, I'm John 👋
+        <div className="space-y-6">
+          <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-[1.1]">
+            Hey, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500">John</span> 👋
           </h1>
 
-          <p className="max-w-[500px] text-slate-600  text-lg dark:text-white-800 leading-relaxed">
-            A passionate <span className="font-semibold text-slate-900 dark:text-white">Full Stack Developer</span> dedicated to building websites, web applications, and custom software that are not only highly functional but also visually captivating.
+          {/* Changed text-slate-600 to text-slate-400 for better dark mode visibility */}
+          <p className="max-w-[540px] text-slate-600 dark:text-slate-400 text-xl leading-relaxed">
+            A passionate <span className="font-bold text-slate-900 dark:text-slate-100">Full Stack Developer</span> dedicated to building websites, web applications, and custom software that are not only highly functional but also visually captivating.
           </p>
         </div>
 
-        {/* CTA Buttons */}
-        <div className="flex flex-wrap gap-4">
+        {/* CTA Buttons - Rounded-full to match your "Message me" badge */}
+        <div className="flex flex-wrap gap-4 pt-4">
           <Link href="/contact">
-            <Button size="lg" className="bg-slate-900 text-white hover:bg-slate-800 px-8 rounded-md">
+            <Button size="lg" className="bg-slate-900 dark:bg-white dark:text-slate-900 text-white hover:opacity-90 px-10 py-7 text-lg rounded-full transition-all">
               Free Consultation
             </Button>
           </Link>
 
           <Link href="/projects">
-            <Button variant="outline" size="lg" className="border-slate-200 px-8 rounded-md">
+            <Button variant="outline" size="lg" className="border-slate-200 dark:border-slate-700 px-10 py-7 text-lg rounded-full hover:bg-slate-50 dark:hover:bg-slate-900 transition-all">
               Explore Projects
             </Button>
           </Link>
         </div>
 
-        {/* Social Icons - Grayscale style like the image */}
-        <div className="flex items-center gap-5 pt-2 text-slate-400">
+        {/* Social Icons */}
+        <div className="flex items-center gap-6 pt-4 text-slate-400 dark:text-slate-500">
           {socials.map((social) => (
             <Link
               key={social.name}
               href={social.link}
-              className="hover:text-slate-900 transition-colors"
+              className="hover:text-slate-900 dark:hover:text-teal-400 transition-all transform hover:-translate-y-1"
             >
               {social.icon}
               <span className="sr-only">{social.name}</span>
@@ -68,15 +68,17 @@ export function HomeBanner() {
         </div>
       </div>
 
-      {/* Right Content - Image with soft rounding */}
-      <div className="flex justify-center items-center">
-        <div className="relative w-full max-w-[450px] aspect-square">
+      {/* Right Content */}
+      <div className="flex justify-center items-center px-6">
+        <div className="relative w-full max-w-[500px] aspect-square group">
+          {/* Subtle glow effect behind image */}
+          <div className="absolute -inset-1 bg-gradient-to-r from-teal-500 to-blue-600 rounded-[2rem] blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
           <Image
             alt="John Rigel"
             fill
-            src="/profile-pic.jpg" // Ensure this path is correct
+            src="/profile-pic.jpg"
             priority
-            className="rounded-3xl object-cover shadow-sm"
+            className="relative rounded-[2rem] object-cover shadow-2xl border border-slate-200/10"
           />
         </div>
       </div>
