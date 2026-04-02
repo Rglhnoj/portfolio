@@ -6,7 +6,7 @@ import { Section } from "@/components/common/Section";
 
 export function Contact() {
   return (
-    <Section id="contact" className="space-y-12">
+    <Section id="contact" className="space-y-12 dark:bg-slate-950 transition-colors duration-300 bg-white">
       <div className="flex flex-col items-center justify-center space-y-4 text-center">
         <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Get in touch</h2>
         <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
@@ -14,7 +14,7 @@ export function Contact() {
         </p>
 
         <Button size="lg" asChild>
-          <Link href="mailto:hello@example.com">
+          <Link href="mailto:recuerdojohnrigel@gmail.com">
             <Mail className="mr-1 h-4 w-4" />
             Say Hello
           </Link>
