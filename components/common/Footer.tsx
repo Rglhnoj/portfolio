@@ -48,10 +48,10 @@ export function Footer() {
           <div>
             <h3 className="font-bold mb-6 text-xs uppercase tracking-[0.2em] text-slate-400 dark:text-slate-500">Connect</h3>
             <ul className="flex flex-col gap-4 text-slate-600 dark:text-slate-400">
-              <li><Link href="https://linkedin.com/..." target="_blank" className="hover:text-emerald-500 dark:hover:text-white transition-colors">LinkedIn</Link></li>
-              <li><Link href="https://github.com/..." target="_blank" className="hover:text-emerald-500 dark:hover:text-white transition-colors">GitHub</Link></li>
-              <li><Link href="https://instagram.com/..." target="_blank" className="hover:text-emerald-500 dark:hover:text-white transition-colors">Instagram</Link></li>
-              <li><Link href="https://facebook.com/..." target="_blank" className="hover:text-emerald-500 dark:hover:text-white transition-colors">Facebook</Link></li>
+              <li><Link href="https://www.linkedin.com/in/recuerdo-john-rigel-82155037b/" target="_blank" className="hover:text-emerald-500 dark:hover:text-white transition-colors">LinkedIn</Link></li>
+              <li><Link href="https://github.com/Rglhnoj/" target="_blank" className="hover:text-emerald-500 dark:hover:text-white transition-colors">GitHub</Link></li>
+              <li><Link href="https://instagram.com/rgljohnny.25/" target="_blank" className="hover:text-emerald-500 dark:hover:text-white transition-colors">Instagram</Link></li>
+              <li><Link href="https://facebook.com/johnrigelrecuerdo" target="_blank" className="hover:text-emerald-500 dark:hover:text-white transition-colors">Facebook</Link></li>
             </ul>
           </div>
         </div>
