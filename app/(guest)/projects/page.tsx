@@ -1,4 +1,4 @@
-import ProjectsPageProvider from "@/components/features/projects/ProjectPageProvider";
+import ProjectsPageProvider from "../../../components/features/projects/ProjectPageProvider";
 
 export default function ProjectsPage() {
   return (
